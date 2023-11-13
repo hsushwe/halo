@@ -1,0 +1,321 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900');
+
+* {
+    font-family: 'Poppins', sans-serif;
+}
+/* width */
+::-webkit-scrollbar {
+	width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+	box-shadow: inset 0 0 5px grey; 
+	border-radius: 10px;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+	background: rgb(47, 128, 0); 
+	border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+	background: #71fc6a; 
+  }
+body {
+    overflow-x: hidden;
+    background-color: #c7ddb5;
+}
+
+.studytips {
+    background-color: #fff;
+    margin-top: 20px;
+    padding: 20px;
+    overflow: hidden; /* Clear floats within the studytips container */
+}
+
+.studytips img {
+    float: right;
+    margin: 0 0 10px 10px;
+    max-width: 300px; /* Adjust the maximum width of the images */
+    height: auto;
+}
+
+/* navbar style */
+.logo img {
+	height: 50px;
+	width: 80px;
+  }
+.navbar {
+   
+    background-color: #75975e;
+    height: auto;
+}
+#mynav{
+    padding: 30px;
+}
+.navbar a {
+    color: #75975e;
+}
+
+.navbar.fixed-top {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+/* Dropdown menu styles */
+.navbar a:not(.logo):hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.dropdown-content {
+    background-color: #75975e;
+}
+
+.dropdown-content a {
+    color: black;
+}
+
+.dropdown-content a:hover {
+    background-color: #c9c9c9;
+    color: black;
+}
+.study {
+	width: 100%;
+	max-width: 95%; /* Increase the max-width for larger boxes */
+	margin: 10px;
+	padding: 20px; /* Increase the padding for more space inside the boxes */
+	background-color: #fff;
+	border-radius: 10px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+	transition: box-shadow 0.3s; /* Smooth transition for box shadow */
+  }
+
+  .study:hover {
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.4); /* Box shadow on hover */
+  }
+
+  .timer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    color: #00bcd4;
+    padding: 20px;
+    height: 100vh;
+    background-image: url('../img/timer-bg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+  
+  .time-display {
+    font-size: 4em;
+    margin-bottom:20px;
+    color: #363636; /* Set the timer text color to white */
+  }
+  
+  
+  .controls {
+    text-align: center;
+  }
+  
+  button {
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 15px 30px;
+    cursor: pointer;
+    font-size: 1.5em;
+    margin-right: 10px;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  
+  .pause-button {
+    border-radius: 10px; /* Adjust the value to control the degree of rounding */
+    padding: 10px 20px; /* Adjust padding for the button */
+  }
+  .reset-icon {
+    cursor: pointer;
+    font-size: 34px;
+    transition: transform 0.3s;
+    color: #363636; /* Set the reset icon color to white */
+  }
+  
+  .reset-icon.rotate {
+    animation: rotate 1s;
+    animation-fill-mode: forwards;
+  }
+  
+  @keyframes rotate {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  .button{
+	background-color: #007bff;
+	color: #fff;
+	border: none;
+	padding: 10px 20px;
+	margin-top: 10px;
+	border-radius: 5px;
+	cursor: pointer;
+	text-decoration: none;
+	font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+.button:hover{
+	background-color: #0056b3;
+	color: #fff;
+	transform: scale(1.05);
+}
+.timer-controls {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+.timer-controls button {
+  border: none;
+  border-radius: 20px;
+  padding: 10px 20px;
+  font-size: 14px;
+  cursor: pointer;
+  margin: 0 10px;
+  background-color: #27ae60;
+  color: #fff;
+}
+
+.timer-controls button:hover {
+  background-color: #2ecc71;
+}
+
+.time-display {
+  font-size: 3rem;
+  text-align: center;
+}
+
+.reset-icon {
+  cursor: pointer;
+  font-size: 24px;
+  transition: transform 0.3s;
+}
+
+.reset-icon.rotate {
+  animation: rotate 1s;
+  animation-fill-mode: forwards;
+}
+
+.start-button {
+  border-radius: 20px;
+}
+
+.pause-button {
+  background-color: #e74c3c;
+}
+
+.pause-button:hover {
+  background-color: #c0392b;
+}
+ 
+
+/* Footer styles */
+footer {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #87ab69;
+    height: auto;
+    font-family: "Open Sans";
+    color: #fff;
+    width: 100%;
+}
+
+.footer-content {
+    max-width: 1170px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.footer-content h3 {
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 3rem;
+}
+
+.footer-content p {
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 28px;
+    font-size: 14px;
+}
+
+/* Social links in the footer */
+.socials {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 3rem 0;
+}
+
+.socials li {
+    margin: 0 10px;
+}
+
+.socials a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.socials a i {
+    font-size: 1.1rem;
+    transition: color 0.4s ease;
+}
+
+.socials a:hover i {
+    color: #c5b5b5;
+}
+
+/* Footer bottom section */
+.footer-bottom {
+    background: #648354;
+    width: 100%;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-bottom p {
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+}
+
+.footer-bottom span {
+    text-transform: uppercase;
+    opacity: 0.4;
+    font-weight: 200;
+}

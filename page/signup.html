@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In</title>
+    <link rel="icon" type="image/x-icon" href="../img/logo.png">
+    <!-- Include Font Awesome and Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../Css/signup2.css">
+</head>
+<body>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div class="card">
+                    <header class="card-header">
+                        <h1 class="card-title">Sign In</h1>
+                    </header>
+                    <main class="card-body">
+                        <form id="sign-in-form">
+                            <div class="form-group">
+                                <div class="input-group">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text"><i class="fas fa-user"></i></span>
+                                    </div>
+                                    <input type="text" class="form-control" id="sign-in-username" name="sign-in-username" placeholder="Username" autocomplete="off" required>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="input-group">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text"><i class="fas fa-lock"></i></span>
+                                    </div>
+                                    <input type="password" class="form-control" id="sign-in-password" name="sign-in-password" placeholder="Password" autocomplete="off" required>
+                                </div>
+                            </div>
+                            <div class="text-center">
+                                <button type="submit" class="btn btn-primary btn-lg">Sign In</button>
+                            </div>
+                        </form>
+                        <p class="mt-3">Or Sign up with social platforms</p>
+                        <p class="text-center">
+                            <a href="https://www.facebook.com/signup" id="facebook-link" class="social-icon" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                            <a href="https://twitter.com/i/flow/signup" id="twitter-link" class="social-icon" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                            <a href="https://accounts.google.com/InteractiveLogin/signinchooser?flowEntry=ServiceLogin&flowName=GlifWebSignIn&hl=en-GB&ifkv=AVQVeyyGNDFAyzB3YRx77PzXzJ3XrHNk16nq1XIbcRYOjZ7jFa2jw7FAkRN-M5zFebFkGWd0jyLFyA&theme=glif" id="google-link" class="social-icon" aria-label="Google"><i class="fab fa-google"></i></a>
+                            <a href="https://signup.live.com/signup?lcid=1033&wa=wsignin1.0&rpsnv=16&ct=1697557343&rver=7.5.2112.0&wp=MBI_SSL&wreply=https%3a%2f%2faccount.microsoft.com%2fauth%2fcomplete-signin%3rru%3dhttps%253A%252F%252Faccount.microsoft.com%252F%253Frefd%253Daccount.microsoft.com%2526refp%253Dsignedout-index&lc=1033&id=292666&lw=1&fl=easi2&mkt=en-US&lic=1&uaid=3af6e25f239a42f39943593f507252c2" id="microsoft-link" class="social-icon microsoft-icon" aria-label="Microsoft"><i class="fab fa-microsoft"></i></a>
+                        </p>
+                    </main>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Include Bootstrap JS and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="../JS/signup.js"></script>
+</body>
+</html>
